@@ -1,0 +1,13 @@
+(/) 1 Tariel
+(/) 2 Gunther 
+(/) 3 Ninja
+(/) 4 Tiberius
+(/) 5 Edjh
+(/) 6 Venegar
+(/) 7 Skippy
+(/) 8 Balor
+() 9 Goliath
+() 10 Nightshade
+() 11 Reila
+(/) 12 Sir John
+() 13 Khaz
