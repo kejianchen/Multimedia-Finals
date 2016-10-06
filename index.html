@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>David Pixel | Multimedia Project</title>
+  <link href="web-lib/core.css" rel="stylesheet" type="text/css" />
+  <script src="web-lib/jquery-3.1.1.min.js"></script>
+  <script src="web-lib/angular.min.js"></script>
+  <script src="web-lib/core.js"></script>
+  <script src="web-lib/c/home.js"></script>
+  <script src="web-lib/c/inside.js"></script>
+</head>
+<body ng-app="app" ng-controller="MainCtrl">
+  <div id="home" class="state" ng-if="view=='home'">
+    <btn-home ng-click="setView('inside')"/>
+  </div>
+  <div id="inside" class="state" ng-if="view=='inside'">
+    <btn-inside src="David.gif" left="0"></btn-inside>
+    <btn-inside src="Fireplace.gif" left="200px"></btn-inside>
+    <btn-inside src="Weaponry.gif" left="450px"></btn-inside>
+  </div>
+</body>
+</html>
