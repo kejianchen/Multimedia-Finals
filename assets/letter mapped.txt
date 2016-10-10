@@ -1,0 +1,5 @@
+<img src="url/to/your/image.jpg" alt="" usemap="#Map" />
+<map name="Map" id="Map">
+    <area alt="" title="" href="#" shape="poly" coords="121,91,122,194,543,155,545,121,536,104" />
+    [...]
+</map>
