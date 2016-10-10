@@ -28,15 +28,16 @@ p,body{ margin:0; padding:0; font-family: EIGHT-BIT-WONDER; }
 
 .clickable { cursor:pointer; }
 
-.asset {
-  display:inline-block;
-  font-size: 0px;
+img + .btn-label {
+  font-size: 12px;
+  position:absolute;
+  text-align: center;
+  bottom:-2.5em !important;
+  color: gray;
 }
-.asset > * { font-size:12px; }
-.asset img {
-  width:100%;
+img:hover + .btn-label {
+  color: #FFF;
 }
-
 
 #home.view #house {
   position: fixed;
@@ -45,9 +46,4 @@ p,body{ margin:0; padding:0; font-family: EIGHT-BIT-WONDER; }
   top:0;
   bottom:0;
   margin:auto;
-}
-
-#inside.view .inside-obj {
-  bottom: 15%;
-  position: absolute;
 }
