@@ -1,6 +1,7 @@
 app.directive('label',[
   function(){
     return {
+      restrict:'A',
       link : function($s,$e,$a){
 
         angular.element($e).ready(function(){
