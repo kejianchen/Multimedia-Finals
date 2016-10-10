@@ -19,6 +19,11 @@ app.directive('viewAboutProjects',[
             padding: 5% 0;
           }
 
+          #about-projects #back {
+            margin:0.5em;
+            font-size: 24px;
+          }
+
         </style>
         <div class="wrapper center-top center-left">
           <img
@@ -28,6 +33,7 @@ app.directive('viewAboutProjects',[
             ng-click="setView('about')"
             >
         </div>
+        <b id="back" class="clickable" ng-click="setView('about')">Back</b>
       </div>`,
       link : function($s,$e,$a){
       }//link
