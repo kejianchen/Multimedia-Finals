@@ -4,6 +4,11 @@
   src: url(fonts/8-bit-pusab.ttf) format("truetype");
 }
 
+.global-back{
+  margin:0.5em;
+  font-size: 24px;
+}
+
 p,body{ margin:0; padding:0; font-family: EIGHT-BIT-WONDER; }
 .view {
   width:100%;

@@ -20,11 +20,16 @@
   <script src="web-lib/v/acc-dagger-gun.js"></script>
   <script src="web-lib/v/acc-sword-hammer.js"></script>
   <script src="web-lib/v/acc-staff.js"></script>
+  <script src="web-lib/v/acc-404.js"></script>
   <script src="web-lib/c/home.js"></script>
   <script src="web-lib/c/label.js"></script>
 </head>
 <body ng-app="app" ng-controller="MainCtrl">
-  <div id="home" class="view" ng-if="view=='home'">
+  <div
+    id="home"
+    class="view"
+    style=""
+    ng-if="view=='home'">
     <btn-home ng-click="setView('about')"/>
   </div>
   <section view-about ng-if="view=='about'"></section>
@@ -43,5 +48,6 @@
   <section view-acc-dagger-gun ng-if="view=='acc-dagger-gun'"></section>
   <section view-acc-sword-hammer ng-if="view=='acc-sword-hammer'"></section>
   <section view-acc-staff ng-if="view=='acc-staff'"></section>
+  <section view-acc-404 ng-if="view=='acc-404'"></section>
 </body>
 </html>

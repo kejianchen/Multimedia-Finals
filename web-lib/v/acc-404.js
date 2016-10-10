@@ -1,12 +1,12 @@
-app.directive('viewAccSwordShield',[
+app.directive('viewAcc404',[
   function(){
     return {
       replace:true,
       restrict:'A',
       template: `
-      <div id="viewAccSwordShield" class="view">
+      <div id="viewAcc404" class="view">
         <style>
-          #viewAccSwordShield .wrapper {
+          #viewAcc404 .wrapper {
             background:url(assets/Background.gif);
             background-repeat: repeat-x;
             background-size: auto 470px;
@@ -14,7 +14,7 @@ app.directive('viewAccSwordShield',[
             width: 100%;
           }
 
-          #viewAccSwordShield #works {
+          #viewAcc404 #works {
             height:80%;
             margin: auto;
             border: 38px solid rgba(0,0,0,0.70);
@@ -24,12 +24,10 @@ app.directive('viewAccSwordShield',[
         </style>
         <b id="back" class="global-back clickable" ng-click="setView('about-projects')">Back</b>
         <div class="wrapper center-top center-left">
-          <img
+          <h3
             id="works"
             class="clickable center-top center-left"
-            src="assets/Bloodshine/DM/DM.gif"
-            ng-click="setView('about')"
-            >
+            >under construction</h3>
         </div>
       </div>`,
       link : function($s,$e,$a){

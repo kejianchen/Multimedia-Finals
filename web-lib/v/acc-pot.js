@@ -22,6 +22,7 @@ app.directive('viewAccPot',[
           }
 
         </style>
+        <b id="back" class="global-back clickable" ng-click="setView('about-projects')">Back</b>
         <div class="wrapper center-top center-left">
           <img
             id="works"
