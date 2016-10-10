@@ -21,8 +21,9 @@ app.directive('viewAboutMe',[
 
           #about-me #chair {
             position: absolute;
-            right: 0.5em;
-            bottom:0.5em;
+            right: 2em;
+            bottom:1em;
+            max-height: 90%;
           }
           #about-me section {
             font-size: 2em;
@@ -50,7 +51,7 @@ app.directive('viewAboutMe',[
           <img
             id="chair"
             class="clickable"
-            src="assets/buttons/Chair.gif"
+            src="assets/buttons/Chair-zoomed.gif"
             ng-click="setView('about')"
             />
 

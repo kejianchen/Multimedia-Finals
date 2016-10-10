@@ -24,17 +24,20 @@ app.directive('viewAbout',[
 
         </style>
         <div class="about-wrapper center-top">
+
             <img label="Home" class="clickable"
               style="left:42px;"
               src="assets/buttons/Door.gif"
               ng-click="setView('home')"/>
-            <img label="About" class="clickable"
-              style="left:169px;"
-              src="assets/buttons/David.gif"
-              ng-click="setView('about-me')"/>
-            <img class="clickable"
-              style="left:264px;"
-              src="assets/buttons/Chair.gif"/>
+            <div label="About Me" style="left:169px;">
+              <img  class="clickable"
+                src="assets/buttons/David.gif"
+                ng-click="setView('about-me')"/>
+              <img class="clickable"
+                style="left:264px;"
+                src="assets/buttons/Chair.gif"
+                ng-click="setView('about-me')"/>
+            </div>
             <img label="Accomplishments" class="clickable"
               style="left:372px;"
               src="assets/buttons/Fireplace.gif"
