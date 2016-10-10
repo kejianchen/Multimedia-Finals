@@ -1,0 +1,19 @@
+{
+  "name": "davidson",
+  "version": "1.0.0",
+  "description": "project of davidson",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kejianchen/Multimedia-Finals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kejianchen/Multimedia-Finals/issues"
+  },
+  "homepage": "https://github.com/kejianchen/Multimedia-Finals#readme"
+}

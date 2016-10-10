@@ -5,17 +5,22 @@
   <script src="web-lib/jquery-3.1.1.min.js"></script>
   <script src="web-lib/angular.min.js"></script>
   <script src="web-lib/core.js"></script>
+  <script src="web-lib/v/about.js"></script>
+  <script src="web-lib/v/about-me.js"></script>
+  <script src="web-lib/v/about-accomplishments.js"></script>
+  <script src="web-lib/v/about-projects.js"></script>
+  <script src="web-lib/v/about-social.js"></script>
   <script src="web-lib/c/home.js"></script>
   <script src="web-lib/c/inside.js"></script>
 </head>
 <body ng-app="app" ng-controller="MainCtrl">
-  <div id="home" class="state" ng-if="view=='home'">
-    <btn-home ng-click="setView('inside')"/>
+  <div id="home" class="view" ng-if="view=='home'">
+    <btn-home ng-click="setView('about')"/>
   </div>
-  <div id="inside" class="state" ng-if="view=='inside'">
-    <btn-inside src="David.gif" left="0"></btn-inside>
-    <btn-inside src="Fireplace.gif" left="200px"></btn-inside>
-    <btn-inside src="Weaponry.gif" left="450px"></btn-inside>
-  </div>
+  <section view-about ng-if="view=='about'"></section>
+  <section view-about-me ng-if="view=='about-me'"></section>
+  <section view-about-accomplishments ng-if="view=='about-accomplishments'"></section>
+  <section view-about-projects ng-if="view=='about-projects'"></section>
+  <section view-about-social ng-if="view=='about-social'"></section>
 </body>
 </html>
