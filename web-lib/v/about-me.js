@@ -37,6 +37,7 @@ app.directive('viewAboutMe',[
           }
 
         </style>
+        <b id="back" class="global-back clickable" ng-click="setView('about')">Back</b>
         <div class="wrapper center-top center-left">
           <section>
             <p class='label'>Name:</p>
@@ -52,7 +53,7 @@ app.directive('viewAboutMe',[
             src="assets/buttons/Chair.gif"
             ng-click="setView('about')"
             />
-          <label for="chair">Return</label>
+
         </div>
       </div>
       `,
