@@ -29,7 +29,7 @@ app.directive('viewAbout',[
               style="left:42px;"
               src="assets/buttons/Door.gif"
               ng-click="setView('home')"/>
-            <div label="About Me" style="left:169px;">
+            <div label="About Me" style="left:169px; bottom:20px;">
               <img  class="clickable"
                 src="assets/buttons/David.gif"
                 ng-click="setView('about-me')"/>
