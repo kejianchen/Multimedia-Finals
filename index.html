@@ -5,6 +5,7 @@
   <script src="web-lib/jquery-3.1.1.min.js"></script>
   <script src="web-lib/angular.min.js"></script>
   <script src="web-lib/core.js"></script>
+  <script src="web-lib/v/home.js"></script>
   <script src="web-lib/v/about.js"></script>
   <script src="web-lib/v/about-me.js"></script>
   <script src="web-lib/v/about-accomplishments.js"></script>
@@ -25,13 +26,7 @@
   <script src="web-lib/c/label.js"></script>
 </head>
 <body ng-app="app" ng-controller="MainCtrl">
-  <div
-    id="home"
-    class="view"
-    1style="background:url('assets/Hillside - bigger.gif')"
-    ng-if="view=='home'">
-    <btn-home ng-click="setView('about')"/>
-  </div>
+  <section view-home ng-if="view=='home'"></section>
   <section view-about ng-if="view=='about'"></section>
   <section view-about-me ng-if="view=='about-me'"></section>
   <section view-about-accomplishments ng-if="view=='about-accomplishments'"></section>
