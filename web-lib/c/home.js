@@ -4,7 +4,7 @@ app.directive('btnHome',[
       replace:true,
       template: `
       <div>
-        <img id='house' class='clickable' src="assets/buttons/Home.gif" style="width:450px;"/>
+        <img id='house' class='clickable center-top center-left' src="assets/Hillside.gif" style="width:450px;"/>
       </div>`
     } // return
   }

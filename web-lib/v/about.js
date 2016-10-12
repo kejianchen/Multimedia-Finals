@@ -34,7 +34,7 @@ app.directive('viewAbout',[
                 src="assets/buttons/David.gif"
                 ng-click="setView('about-me')"/>
               <img class="clickable"
-                style="left:264px;"
+                style="left:264px; height:143px;"
                 src="assets/buttons/Chair.gif"
                 ng-click="setView('about-me')"/>
             </div>
@@ -47,7 +47,7 @@ app.directive('viewAbout',[
               src="assets/buttons/Weaponry.gif"
               ng-click="setView('about-projects')"/>
             <img label="Contact Me"  class="clickable"
-              style="left:1009;"
+              style="left:900;"
               src="assets/buttons/Desk.gif"
               ng-click="setView('about-social')"/>
         </div>
