@@ -1,48 +1,24 @@
-<html>
-<head>
-  <title>David Pixel | Multimedia Project</title>
-  <link href="web-lib/core.css" rel="stylesheet" type="text/css" />
-  <script src="web-lib/jquery-3.1.1.min.js"></script>
-  <script src="web-lib/angular.min.js"></script>
-  <script src="web-lib/core.js"></script>
-  <script src="web-lib/v/home.js"></script>
-  <script src="web-lib/v/about.js"></script>
-  <script src="web-lib/v/about-me.js"></script>
-  <script src="web-lib/v/about-accomplishments.js"></script>
-  <script src="web-lib/v/about-projects.js"></script>
-  <script src="web-lib/v/about-social.js"></script>
-  <script src="web-lib/v/acc-belt.js"></script>
-  <script src="web-lib/v/acc-sword-shield.js"></script>
-  <script src="web-lib/v/acc-pot.js"></script>
-  <script src="web-lib/v/acc-arrow-quiver.js"></script>
-  <script src="web-lib/v/acc-goat-skull.js"></script>
-  <script src="web-lib/v/acc-claymore.js"></script>
-  <script src="web-lib/v/acc-crossbow-skull.js"></script>
-  <script src="web-lib/v/acc-dagger-gun.js"></script>
-  <script src="web-lib/v/acc-sword-hammer.js"></script>
-  <script src="web-lib/v/acc-staff.js"></script>
-  <script src="web-lib/v/acc-404.js"></script>
-  <script src="web-lib/c/home.js"></script>
-  <script src="web-lib/c/label.js"></script>
-</head>
-<body ng-app="app" ng-controller="MainCtrl">
-  <section view-home ng-if="view=='home'"></section>
-  <section view-about ng-if="view=='about'"></section>
-  <section view-about-me ng-if="view=='about-me'"></section>
-  <section view-about-accomplishments ng-if="view=='about-accomplishments'"></section>
-  <section view-about-projects ng-if="view=='about-projects'"></section>
-  <section view-about-social ng-if="view=='about-social'"></section>
+<title>David Pixel | Multimedia Project</title>
+<link href="web-lib/core.css" rel="stylesheet" type="text/css" />
 
-  <section view-acc-belt ng-if="view=='acc-belt'"></section>
-  <section view-acc-sword-shield ng-if="view=='acc-sword-shield'"></section>
-  <section view-acc-pot ng-if="view=='acc-pot'"></section>
-  <section view-acc-arrow-quiver ng-if="view=='acc-arrow-quiver'"></section>
-  <section view-acc-goat-skull ng-if="view=='acc-goat-skull'"></section>
-  <section view-acc-claymore ng-if="view=='acc-claymore'"></section>
-  <section view-acc-crossbow-skull ng-if="view=='acc-crossbow-skull'"></section>
-  <section view-acc-dagger-gun ng-if="view=='acc-dagger-gun'"></section>
-  <section view-acc-sword-hammer ng-if="view=='acc-sword-hammer'"></section>
-  <section view-acc-staff ng-if="view=='acc-staff'"></section>
-  <section view-acc-404 ng-if="view=='acc-404'"></section>
-</body>
-</html>
+
+<div id="home" class="view">
+  <style>
+  #house {
+    box-shadow: 0px 0px 0px 0.55in #FFF;
+    outline: 0.5in solid #101010;
+  }
+  </style>
+  <img id='house'
+    class='center-top center-left'
+    src="assets/Hillside.gif"
+    usemap="#HouseMap"/>
+  <map name="HouseMap" id="HouseMap">
+    <area
+      title="enter"
+      href="web-lib/view/about.html"
+      shape="poly"
+      coords="171,232,292,231,281,189,277,170,285,172,270,146,222,112,245,55,186,62,186,116,188,134,191,142,166,173"
+      />
+  </map>
+</div>

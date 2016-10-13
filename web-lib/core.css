@@ -4,6 +4,12 @@
   src: url(fonts/8-bit-pusab.ttf) format("truetype");
 }
 
+a:active, a:visited{
+  color: #FFF;
+}
+
+
+
 .global-back{
   margin:0.5em;
   font-size: 24px;

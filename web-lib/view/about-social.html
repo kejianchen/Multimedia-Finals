@@ -1,13 +1,9 @@
-app.directive('viewAboutSocial',[
-  function(){
-    return {
-      replace:true,
-      restrict:'A',
-      template: `
+<title>David Pixel | Multimedia Project</title>
+<link href="../core.css" rel="stylesheet" type="text/css" />
       <div id="about-social" class="view">
         <style>
           #about-social .wrapper {
-            background:url(assets/Background.gif);
+            background:url(../../assets/Background.gif);
             background-repeat: repeat-x;
             background-size: auto 470px;
             height:470px;
@@ -35,13 +31,13 @@ app.directive('viewAboutSocial',[
           }
         </style>
         <div class="wrapper center-top center-left">
-          <img  class="clickable"
+          <img
             id='desk'
-            src="assets/buttons/Desk.gif"
-            ng-click="setView('about-social')"/>
+            src="../../assets/buttons/Desk.gif"
+            href="about-social.html"/>
           <img
             id='letter'
-            src="assets/Letter.gif"
+            src="../../assets/Letter.gif"
             class="center-top center-left"
             usemap="#LetterMap"
           />
@@ -52,10 +48,5 @@ app.directive('viewAboutSocial',[
             <area alt="" title="" shape="poly" coords="116,332,119,464,530,454,536,331" />
             <area alt="" title="" shape="poly" coords="543,522,564,323,585,295,560,238,552,131,565,54,608,15,646,6,664,7,692,74,665,248,666,310,688,372,696,524,543,522" />
         </map>
-        <b id="back" class="clickable" ng-click="setView('about')">Back</b>
-      </div>`,
-      link : function($s,$e,$a){
-      }//link
-    } // return
-  }
-])
+        <a href="about.html"><b id="back" class="clickable">Back</b></a>
+      </div>

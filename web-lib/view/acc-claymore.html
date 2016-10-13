@@ -1,13 +1,9 @@
-app.directive('viewAccClaymore',[
-  function(){
-    return {
-      replace:true,
-      restrict:'A',
-      template: `
+<title>David Pixel | Multimedia Project</title>
+<link href="../core.css" rel="stylesheet" type="text/css" />
       <div id="viewAccClaymore" class="view">
         <style>
           #viewAccClaymore .wrapper {
-            background:url(assets/Background.gif);
+            background:url(../../assets/Background.gif);
             background-repeat: repeat-x;
             background-size: auto 470px;
             height:470px;
@@ -22,18 +18,13 @@ app.directive('viewAccClaymore',[
           }
 
         </style>
-        <b id="back" class="global-back clickable" ng-click="setView('about-projects')">Back</b>
+        <a href="about-projects.html"><b id="back" class="global-back clickable">Back</b></a>
         <div class="wrapper center-top center-left">
           <img
             id="works"
             class="clickable center-top center-left"
-            src="assets/Bloodshine/Tiberius Cusland/Rework4.gif"
-            ng-click="setView('about')"
+            src="../../assets/Bloodshine/Tiberius Cusland/Rework4.gif"
+            href="about.html"
             >
         </div>
-      </div>`,
-      link : function($s,$e,$a){
-      }//link
-    } // return
-  }
-])
+      </div>
